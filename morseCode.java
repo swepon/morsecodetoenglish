@@ -76,7 +76,6 @@ public class morseCode
                 String morseForLetter = dictionary.get(letterStr) + " ";
                 morse += morseForLetter;
             }
-            //if letter is not in the dictionary as a key
             else
             {
                 String morseForLetter = letterStr;
@@ -105,7 +104,6 @@ public class morseCode
             {
                 String morseLetter = phrase.substring(indexOfSpace, i);
                 morseLetter = morseLetter.replaceAll("\\s", "");
-                //checks if dictionary contains the morse code letter
                 if (dictionary.containsValue(morseLetter))
                 {
                     for (Map.Entry<String, String> entry: dictionary.entrySet())
@@ -127,8 +125,4 @@ public class morseCode
         }
         return englishPhrase;
     }
-
-   
-
-
 }
